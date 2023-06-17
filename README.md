@@ -9,7 +9,7 @@ Para utilizar essa API, siga as etapas abaixo:
 
 1. Clone o repositório para o seu ambiente local:
     
-    ```
+    ```bash
     
     git clone https://github.com/matefs/api-transcricao-imagem.git
     
@@ -17,22 +17,20 @@ Para utilizar essa API, siga as etapas abaixo:
     
 2. Navegue até o diretório do projeto:
     
-    ```
-    
+    ```bash
     cd api-transcricao-imagem
     cd BACKEND-API-TESSERACT/
     ```
     
 3. Instale as dependências do projeto usando o gerenciador de pacotes de sua preferência (npm ou yarn):
     
-    ```
-    
+    ```bash
     npm install
     ```
     
 4. Execute a API localmente:
     
-    ```
+    ```bash
     node index.js
     ```
     
