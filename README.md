@@ -75,7 +75,7 @@ fetch('http://localhost:4000/transcrever', {
 
 ### Exemplo de Resposta
 
-```
+```bash
   "Texto transcrito da imagem..."
 ```
 
