@@ -8,6 +8,10 @@ const app = express();
 app.use(express.json());
 app.use(cors()); // Adiciona o CORS à sua API
 
+app.get('/', async (req,res) => { 
+  let status = { status: 'Tente utilizar a rota /transcrever'}
+  res.send(JSON.stringify(status))
+})
 
 
 app.post('/transcrever', async (req, res) => {
