@@ -87,4 +87,4 @@ Certifique-se de seguir as diretrizes de contribuição do projeto.
 
 ## **Licença**
 
-Este projeto não tem lincença.
+Este projeto não tem licença.
