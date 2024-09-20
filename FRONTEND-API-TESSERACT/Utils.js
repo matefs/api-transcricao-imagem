@@ -18,9 +18,11 @@ function enviarImagensBase64() {
         body: JSON.stringify({ image: src }),
       })
         .then((response) => response.json())
-        .then((data) => {
-          console.log(data.text);
-        })
+              .then((data) => {
+                document.getElementById('content').innerHTML = data.text;
+                document.getElementById('botao-copiar').style.display = 'block';
+              })
+
         .catch((error) => {
           console.error(error);
         });
@@ -30,6 +32,17 @@ function enviarImagensBase64() {
 
 const button = document.getElementById('botao-enviar');
 button.addEventListener('click', enviarImagensBase64);
+
+document.getElementById('botao-copiar').addEventListener('click', () => {
+  const textoParaCopiar = document.getElementById('content').innerText;
+  navigator.clipboard.writeText(textoParaCopiar)
+      .then(() => {
+        console.log('Texto copiado para a área de transferência!');
+      })
+      .catch((err) => {
+        console.error('Erro ao copiar texto: ', err);
+      });
+});
 
 /* 
 // o base64 deve ser sem o "data:image/png;base64,"

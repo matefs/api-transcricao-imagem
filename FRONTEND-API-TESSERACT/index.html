@@ -6,14 +6,12 @@
     <script src="clipboard.js" defer></script>
     <script src="Utils.js" defer></script>
   </head>
-  <body>
-    <!-- fim do content -->
-    <h1>Transcrever ultima imagem</h1>
-    Copie uma imagem para o clipboard e pressione Ctrl + V dentro dessa página.
-    <br />
-    <button id="botao-enviar">Enviar imagem</button>
-    <br />
-    <!-- todo: enviar imagem para endpiont -->
-    <div id="content"></div>
+  <body style="font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; background-color: #f4f4f4;">
+  <h1 style="margin-bottom: 20px; color: #333;">Transcrever imagem</h1>
+  <p style="margin-bottom: 20px; color: #666;">Copie uma imagem para o clipboard e pressione Ctrl + V dentro dessa página.</p>
+  <button id="botao-enviar" style="background-color: #0070f3; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Enviar imagem</button>
+
+  <div id="content" style="margin-top: 20px; border: 1px solid #ddd; border-radius: 5px; background-color: white;"></div>
+  <button id="botao-copiar" style="display: none; margin-top: 10px; background-color: #28a745; color: white; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Copiar Texto</button>
   </body>
 </html>
