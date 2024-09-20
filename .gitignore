@@ -1,4 +1,7 @@
 # Logs
+BACKEND-API-TESSERACT/node_modules
+FRONTEND-API-TESSERACT/node_modules
+.idea
 logs
 *.log
 npm-debug.log*
