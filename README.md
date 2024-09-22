@@ -1,5 +1,8 @@
 
 # **API de Transcrição de Imagem**
+![image](https://github.com/user-attachments/assets/6f2ea007-fe3f-4139-bdc0-a0d76d528309)
+![image](https://github.com/user-attachments/assets/010dcc2c-d45e-4700-b9fb-8c5dd4ba1d59)
+
 
 Essa é uma API desenvolvida para realizar a transcrição de texto contido em imagens. Ela utiliza a biblioteca de reconhecimento óptico de caracteres (OCR) para extrair o texto de uma imagem e fornecer o resultado em formato de texto.
 
