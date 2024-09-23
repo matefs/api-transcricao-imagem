@@ -22,7 +22,7 @@ Para utilizar essa API, siga as etapas abaixo:
     
     ```bash
     cd api-transcricao-imagem
-    cd BACKEND-API-TESSERACT/
+    cd src/
     ```
     
 3. Instale as dependências do projeto usando o gerenciador de pacotes de sua preferência (npm ou yarn):
