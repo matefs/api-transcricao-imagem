@@ -6,12 +6,13 @@ const cors = require('cors');
 
 const app = express();
 app.use(express.json());
-app.use(cors()); // Adiciona o CORS à sua API
+app.use(cors());
 
-app.get('/', async (req,res) => { 
-  let status = { status: 'Tente utilizar a rota /transcrever'}
-  res.send(JSON.stringify(status))
-})
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
+});
 
 
 app.post('/transcrever', async (req, res) => {
