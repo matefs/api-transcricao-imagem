@@ -10,7 +10,7 @@ function enviarImagensBase64() {
       src = src.replace('data:image/png;base64,', '');
       console.log('Imagem base64 encontrada:', src);
 
-      fetch('http://localhost:4000/transcrever', {
+      fetch(`${window.location.origin}/transcrever`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
