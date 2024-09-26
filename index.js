@@ -19,7 +19,9 @@ app.post('/transcrever', async (req, res) => {
     const base64Image = req.body.image;
     const imageBuffer = Buffer.from(base64Image, 'base64');
 
-    const result = await Tesseract.recognize(imageBuffer, 'por');
+    const result = await Tesseract.recognize(imageBuffer, 'por', {
+      preserve_interword_spaces: '1'
+    });
     const text = result.data.text;
 
     res.json({ text });
